@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CRITICAL: SEO Metadata from site_config -->
+    <title>10 Surprising Benefits of a Daily Walking Habit</title>
+    <meta name="description" content="Looking for a joint-friendly workout? Learn why walking is the perfect low-impact exercise for improving fitness without stressing your body.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚶</text></svg>">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Walkingforbeginners</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#playground">Create</a>
+            <a href="#features">Why Use</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <!-- Layer 1: Background Image -->
+            <div class="hero-bg-image">
+                <img src="images/hero-bg.jpg" alt="Cinematic dark abstract tunnel with neon strips" loading="eager">
+            </div>
+            
+            <!-- Layer 2: Animation Overlay -->
+            <div class="hero-bg-animation">
+                <!-- Particles injected by JS -->
+            </div>
+            
+            <!-- Layer 3: Dark Overlay -->
+            <div class="hero-overlay"></div>
+            
+            <!-- Layer 4: Content -->
+            <div class="hero-content fade-in-up">
+                <h1>The Ultimate Guide to Indoor Walking</h1>
+                <p class="hero-description">Get fit from the comfort of home. Explore energetic and effective walking workouts designed to be done in any space. No treadmill, no excuses!</p>
+                <a href="#playground" class="btn btn-primary">Generate Walking Video</a>
+            </div>
+        </section>
+
+        <!-- Playground Section -->
+        <section id="playground">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Complete Guide to Starting a Walking Routine for Better Health</h2>
+                    <p>Think walking is just for beginners? Think again. We'll show you how to incorporate intervals, inclines, and proper arm movement to transform your daily walk into a high-efficiency, calorie-torching workout that builds serious fitness.</p>
+                </div>
+
+                <div class="playground-grid">
+                    <!-- Left: Controls -->
+                    <div class="control-panel card">
+                        <h3>Upload Image</h3>
+                        <div id="upload-zone" class="upload-zone">
+                            <input type="file" id="file-input" accept="image/*" hidden>
+                            <div class="upload-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <p>Drag & Drop or Click to Upload</p>
+                            </div>
+                            <img id="preview-image" class="preview-image hidden" alt="Upload preview">
+                        </div>
+                        <div class="action-buttons">
+                            <button id="generate-btn" class="btn btn-primary btn-full" disabled>Generate Walking Video</button>
+                            <button id="reset-btn" class="btn btn-secondary btn-full hidden">Reset</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Result -->
+                    <div class="result-panel card">
+                        <h3>Generated Video</h3>
+                        <div id="result-container" class="result-display">
+                            <div id="loading-state" class="loading-state hidden">
+                                <div class="spinner"></div>
+                                <p>Animating subject...</p>
+                            </div>
+                            <div id="empty-state" class="empty-state">
+                                <p>Result will appear here</p>
+                            </div>
+                            <!-- Using generated image as simulated video result -->
+                            <img id="result-final" class="hidden" alt="Generated walking result">
+                        </div>
+                        <button id="download-btn" class="btn btn-accent btn-full hidden">Download Video</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use / Features Section -->
+        <section id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Our Walking Stands Out?</h2>
+                </div>
+                <div class="grid-4 why-use-grid">
+                    <!-- Benefit 1 -->
+                    <div class="feature-card card fade-in-up">
+                        <div class="icon-wrapper">🚀</div>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Our simple, intuitive design makes the Walking tool accessible for everyone, even if you have no technical experience.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="feature-card card fade-in-up" style="transition-delay: 0.1s">
+                        <div class="icon-wrapper">🧠</div>
+                        <h3>AI-Powered Realistic Scene</h3>
+                        <p>Our intelligent AI blends your creativity with cutting-edge technology, producing stunning, lifelike, and realistic outputs with ease.</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="feature-card card fade-in-up" style="transition-delay: 0.2s">
+                        <div class="icon-wrapper">💎</div>
+                        <h3>Free to Use</h3>
+                        <p>Access all of our features at no cost. There are no hidden fees—just unlimited creativity without any restrictions.</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="feature-card card fade-in-up" style="transition-delay: 0.3s">
+                        <div class="icon-wrapper">⚡</div>
+                        <h3>Instant Results</h3>
+                        <p>Upload your photo and receive Walking style visuals within seconds. No editing or design skills are needed, as the AI handles everything for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How to Use Walking</h2>
+                </div>
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <div class="step-card card fade-in-up">
+                        <div class="step-icon">1</div>
+                        <h3>Upload Your Photo</h3>
+                        <p>Choose a clear, well-lit image and upload it to our Walking tool to apply the effect.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-card card fade-in-up" style="transition-delay: 0.1s">
+                        <div class="step-icon">2</div>
+                        <h3>Apply Video Effect</h3>
+                        <p>Click on the “Apply Video Effect” button to apply the Walking effect and turn your photo into an animated video.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-card card fade-in-up" style="transition-delay: 0.2s">
+                        <div class="step-icon">3</div>
+                        <h3>Download & Share</h3>
+                        <p>Once your video is generated, download your Walking video and share it with your friends, family, and on your favorite social media platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Generated Examples</h2>
+                    <p>See what others have created.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item card-lift fade-in-up">
+                        <img src="images/gallery-result-1.jpg" alt="Model walking on runway" loading="lazy">
+                    </div>
+                    <div class="gallery-item card-lift fade-in-up" style="transition-delay: 0.1s">
+                        <img src="images/gallery-result-2.jpg" alt="Cyberpunk character walking" loading="lazy">
+                    </div>
+                    <div class="gallery-item card-lift fade-in-up" style="transition-delay: 0.2s">
+                        <img src="images/gallery-result-3.jpg" alt="Astronaut walking on Mars" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What People Say about us</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- Review 1 -->
+                    <div class="testimonial-card card fade-in-up">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"This has become my go-to tool for quick edits. It's surprisingly powerful yet so simple to use."</p>
+                        <div class="author">
+                            <span class="name">Olivia</span>
+                            <span class="role">Graphic Designer</span>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="testimonial-card card fade-in-up" style="transition-delay: 0.1s">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"I'm genuinely impressed with the quality. The Max Studio team really nailed the user experience with this one."</p>
+                        <div class="author">
+                            <span class="name">Ethan</span>
+                            <span class="role">iOS user from USA</span>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="testimonial-card card fade-in-up" style="transition-delay: 0.2s">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"I can create professional-looking content in just a few minutes. It's a total game-changer for my workflow!"</p>
+                        <div class="author">
+                            <span class="name">Sophia</span>
+                            <span class="role">Content Creator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">What is the Walking video effect? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>The Walking effect is a cutting-edge AI tool that transforms a single static photo into a dynamic video. Our technology intelligently animates the subject in your image, creating a seamless and realistic walking motion to bring your picture to life.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">How much time does it take to generate the video? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>The processing time depends on the complexity of the uploaded image. However, our advanced AI algorithms are optimized for speed, ensuring we deliver your final video much faster than most competing platforms.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">Is the Walking effect tool free to use? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>Yes, it is free to get started. When you sign up for an account on our website, we provide you with a complimentary set of free credits that you can use to try the Walking video effect and explore our other AI tools.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">Are my uploaded photos safe and private? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>Absolutely. We take your privacy and security very seriously. Your images are uploaded via a secure connection, are used solely for the purpose of generating your video, and are never shared with third parties. Your data is handled with the utmost confidentiality.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">What types of images produce the best results? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>For the best results, use a clear, high-resolution photo where the subject (person or character) is fully visible from head to toe. Images with a clear distinction between the subject and the background tend to produce more realistic walking animations.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">In what format can I download the final video? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>Once the AI has applied the Walking effect, you can download your animated video in a high-quality MP4 format. This format is universally compatible with all major social media platforms, video players, and editing software.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">Can I use the generated videos for commercial purposes? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>Yes. Once you create a video using our tool, you have the full rights to use it for both personal and commercial projects. Feel free to use it in marketing campaigns, on social media, or in any other creative work.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item fade-in-up">
+                        <button class="accordion-header">What if I encounter an issue or am not happy with the result? <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>We aim for 100% user satisfaction. If you encounter any technical issues or the result isn't what you expected, please reach out to our dedicated customer support team. We're always here to help you troubleshoot and achieve the best possible outcome.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Walkingforbeginners</h3>
+                    <p>Transform static photos into cinematic walking videos with AI.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-modal-target="privacy-modal">Privacy Policy</a>
+                    <a href="#" data-modal-target="terms-modal">Terms of Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Walkingforbeginners. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="privacy-modal">&times;</span>
+            <div class="modal-body">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+
+                <h4>1. Data Collection</h4>
+                <p>We collect only the minimum data necessary:</p>
+                <ul>
+                <li>Images you upload for processing (temporarily stored)</li>
+                <li>Basic usage analytics (non-personal)</li>
+                <li>Browser type and device information</li>
+                </ul>
+
+                <h4>2. Image Processing</h4>
+                <p>Your uploaded images are:</p>
+                <ul>
+                <li>Processed securely on our servers</li>
+                <li>Automatically deleted within 24 hours</li>
+                <li>Never shared with third parties</li>
+                <li>Not used for AI training without consent</li>
+                </ul>
+
+                <h4>3. Data Security</h4>
+                <p>All data transmission is encrypted using SSL/TLS protocols.</p>
+
+                <h4>4. Cookies</h4>
+                <p>We use essential cookies only for site functionality.</p>
+
+                <h4>5. Your Rights</h4>
+                <p>You have the right to request deletion of any stored data.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="terms-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="terms-modal">&times;</span>
+            <div class="modal-body">
+                <h2>Terms of Service</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using this service, you agree to these Terms.</p>
+
+                <h4>2. Service Description</h4>
+                <p>This service provides AI-powered image transformation. Provided "as-is" without warranties.</p>
+
+                <h4>3. Acceptable Use</h4>
+                <p>You agree NOT to upload:</p>
+                <ul>
+                <li>Illegal or unlawful content</li>
+                <li>Explicit, pornographic, or obscene material</li>
+                <li>Content depicting violence or harm</li>
+                <li>Images you do not have rights to use</li>
+                </ul>
+
+                <h4>4. Intellectual Property</h4>
+                <p>You retain full ownership of your original images. Generated effects are royalty-free for personal and commercial use.</p>
+
+                <h4>5. Limitation of Liability</h4>
+                <p>We are not liable for any damages arising from the use of this service.</p>
+
+                <h4>6. Modifications</h4>
+                <p>We may update these terms at any time. Continued use constitutes acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
